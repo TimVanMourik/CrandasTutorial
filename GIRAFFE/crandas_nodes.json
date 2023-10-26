@@ -194,6 +194,14 @@
                       "argument": {}
                     }
                   ]
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
                 }
               ]
             }
