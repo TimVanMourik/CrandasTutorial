@@ -68,7 +68,7 @@
                   "default": null,
                   "code": [
                     {
-                      "language": "Keras",
+                      "language": "Crandas",
                       "argument": {}
                     }
                   ],
@@ -95,6 +95,105 @@
                   "visible": true,
                   "editable": true,
                   "code": []
+                }
+              ]
+            },
+            {
+              "name": "Merge",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.merge",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "how",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "inner",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "on",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "None",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "left_on",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "none",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "right_on",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "None",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "validate",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "one_to_one",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
                 }
               ]
             }
