@@ -204,6 +204,63 @@
                   "code": []
                 }
               ]
+            },
+            {
+              "name": "Column reference",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CSeriesColRef",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "table",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "column",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "colour": "#80b649"
