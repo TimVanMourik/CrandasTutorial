@@ -2,6 +2,6 @@
 tools:
   porcupine:
     files:
-      - GIRAFFE/porcupipeline.pork
+      - GIRAFFE/crandas_pipeline.pork
     nodes:
       - https://raw.githubusercontent.com/TimVanMourik/keras/giraffe-tools/keras_nodes.json
