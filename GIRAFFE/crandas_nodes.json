@@ -145,7 +145,7 @@
                   "output": false,
                   "visible": true,
                   "editable": true,
-                  "default": "None",
+                  "default": "",
                   "code": [
                     {
                       "language": "Crandas",
@@ -159,7 +159,7 @@
                   "output": false,
                   "visible": true,
                   "editable": true,
-                  "default": "none",
+                  "default": "",
                   "code": [
                     {
                       "language": "Crandas",
@@ -173,7 +173,7 @@
                   "output": false,
                   "visible": true,
                   "editable": true,
-                  "default": "None",
+                  "default": "",
                   "code": [
                     {
                       "language": "Crandas",
