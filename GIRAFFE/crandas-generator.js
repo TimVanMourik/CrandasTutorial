@@ -1,5 +1,18 @@
-const LANGUAGE = "Crandas";
+module.exports = () => {
+  const LANGUAGE = "Crandas";
+  const newline = "\n";
 
-function writeCode() {
-  return "Work in progress! Nothing to see here, move along!";
-}
+  function writePreamble() {
+    return `import crandas as cd`;
+  }
+
+  async function writeCode(nodes, links) {
+    const preamble = writePreamble();
+    return [preamble].join(newline);
+  }
+
+  return {
+    writeCode,
+    writeFiles,
+  };
+};
