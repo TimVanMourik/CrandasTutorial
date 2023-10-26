@@ -2,7 +2,6 @@
 tools:
   porcupine:
     file:
-      - GIRAFFE/porcupine_pipeline.pork
-  armadillo:
-    neurovault:
-      - 31997
+      - GIRAFFE/crandas_pipeline.pork
+    nodes:
+      - GIRAFFE/crandas_nodes.json
