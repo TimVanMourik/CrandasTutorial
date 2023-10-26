@@ -53,6 +53,14 @@
                     }
                   ],
                   "type": "boolean"
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
                 }
               ]
             }
@@ -109,6 +117,14 @@
                     }
                   ],
                   "type": "boolean"
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
                 }
               ]
             }
