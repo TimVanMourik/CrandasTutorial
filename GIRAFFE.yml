@@ -5,3 +5,5 @@ tools:
       - GIRAFFE/crandas_pipeline.pork
     nodes:
       - GIRAFFE/crandas_nodes.json
+    grammars:
+      - GIRAFFE/crandas-generator.js
