@@ -1,5 +1,5 @@
 const LANGUAGE = "Crandas";
 
-export function writeCode() {
+function writeCode() {
   return "Work in progress! Nothing to see here, move along!";
 }
