@@ -26,20 +26,6 @@
                   "code": []
                 },
                 {
-                  "name": "ignore_index",
-                  "input": false,
-                  "output": false,
-                  "visible": true,
-                  "editable": true,
-                  "code": [
-                    {
-                      "language": "Crandas",
-                      "argument": {}
-                    }
-                  ],
-                  "type": "boolean"
-                },
-                {
                   "name": "other",
                   "input": true,
                   "output": false,
@@ -53,23 +39,39 @@
                     }
                   ],
                   "type": null
+                },
+                {
+                  "name": "ignore_index",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ],
+                  "type": "boolean"
                 }
               ]
-            },
+            }
+          ],
+          "colour": "#80b649"
+        },
+        {
+          "name": "Column functions",
+          "nodes": [
             {
-              "name": "Activation",
-              "category": "core",
-              "toolbox": "Keras",
+              "name": "Mean",
+              "toolbox": "Crandas",
               "code": [
                 {
-                  "language": "Keras",
-                  "argument": {
-                    "name": "Activation",
-                    "import": "from keras.layers import Activation"
-                  }
+                  "language": "Crandas",
+                  "argument": {}
                 }
               ],
-              "web_url": "https://keras.io/layers/core/Activation",
+              "web_url": "https://rosemanlabs.com/rldocs/release/1.6.x/api/crandas.html#crandas.crandas.CSeriesColRef.mean",
               "ports": [
                 {
                   "name": "",
@@ -80,37 +82,37 @@
                   "code": []
                 },
                 {
-                  "name": "activation",
+                  "name": "threshold",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": null,
+                  "code": [
+                    {
+                      "language": "Keras",
+                      "argument": {}
+                    }
+                  ],
+                  "type": null
+                },
+                {
+                  "name": "as_table",
                   "input": false,
                   "output": false,
                   "visible": true,
                   "editable": true,
                   "code": [
                     {
-                      "language": "Keras",
-                      "argument": {
-                        "kwarg": false,
-                        "arg": 0
-                      }
+                      "language": "Crandas",
+                      "argument": {}
                     }
-                  ]
-                },
-                {
-                  "name": "",
-                  "input": false,
-                  "output": true,
-                  "visible": true,
-                  "editable": true,
-                  "code": []
+                  ],
+                  "type": "boolean"
                 }
               ]
             }
           ],
-          "colour": "#80b649"
-        },
-        {
-          "name": "Column functions",
-          "nodes": [],
           "colour": "#93aa42"
         }
       ],
