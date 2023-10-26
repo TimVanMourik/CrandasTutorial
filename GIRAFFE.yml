@@ -2,7 +2,6 @@
 tools:
   porcupine:
     files:
-      # - GIRAFFE/crandas_pipeline.pork
-      - GIRAFFE/porcupipeline.pork
+      - GIRAFFE/crandas_pipeline.pork
     nodes:
       - GIRAFFE/crandas_nodes.json
