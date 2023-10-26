@@ -11,6 +11,13 @@ module.exports = () => {
     return [preamble].join(newline);
   }
 
+  async function writeFiles(nodes, links) {
+    const analysisFilename = "GIRAFFE/code/analysis.py";
+    return {
+      [analysisFilename]: await writeCode(nodes),
+    };
+  }
+
   return {
     writeCode,
     writeFiles,
