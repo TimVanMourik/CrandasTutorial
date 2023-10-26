@@ -90,21 +90,6 @@
                   "code": []
                 },
                 {
-                  "name": "threshold",
-                  "input": true,
-                  "output": false,
-                  "visible": true,
-                  "editable": true,
-                  "default": null,
-                  "code": [
-                    {
-                      "language": "Keras",
-                      "argument": {}
-                    }
-                  ],
-                  "type": null
-                },
-                {
                   "name": "as_table",
                   "input": false,
                   "output": false,
