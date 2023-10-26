@@ -4,6 +4,40 @@
       "name": "Crandas",
       "categories": [
         {
+          "name": "Data input",
+          "nodes": [
+            {
+              "name": "Table",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CDataFrame",
+              "ports": [
+                {
+                  "name": "handle",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Table functions",
           "nodes": [
             {
