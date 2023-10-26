@@ -281,7 +281,7 @@
                   "output": false,
                   "visible": true,
                   "editable": true,
-                  "default": "False",
+                  "default": false,
                   "code": [
                     {
                       "language": "Crandas",
@@ -346,6 +346,14 @@
                       "argument": {}
                     }
                   ]
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
                 }
               ]
             }
