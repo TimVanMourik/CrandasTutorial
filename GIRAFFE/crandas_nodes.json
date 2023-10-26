@@ -233,7 +233,7 @@
                   "code": []
                 },
                 {
-                  "name": "table",
+                  "name": "column_name",
                   "input": false,
                   "output": false,
                   "visible": true,
@@ -245,14 +245,101 @@
                       "argument": {}
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "name": "Sum",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CSeriesColRef.sum",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
                 },
                 {
-                  "name": "column",
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "as_table",
                   "input": false,
                   "output": false,
                   "visible": true,
                   "editable": true,
-                  "default": "",
+                  "default": "False",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ],
+                  "type": "boolean"
+                },
+                {
+                  "name": "treshold",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "None",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Filter",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CDataFrame.filter",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "theshold",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "None",
                   "code": [
                     {
                       "language": "Crandas",
@@ -300,6 +387,62 @@
                     }
                   ],
                   "type": "boolean"
+                },
+                {
+                  "name": "treshold",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "None",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                }
+              ]
+            },
+            {
+              "name": "Comparison",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "criteria",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
                 },
                 {
                   "name": "",
