@@ -6,4 +6,6 @@ tools:
     nodes:
       - GIRAFFE/crandas_nodes.json
     grammars:
-      - GIRAFFE/crandas-generator.js
+      - script: GIRAFFE/crandas-generator.js
+        language: Crandas
+        format: python
