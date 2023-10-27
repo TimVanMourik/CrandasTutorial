@@ -4,7 +4,7 @@ module.exports = () => {
 
   const CLASS_MAP = {
     ["Table"]: (node) => tableCode(node),
-    ["Join"]: (node) => joinCode(node, nodeMap),
+    ["Merge"]: (node) => joinCode(node, nodeMap),
   };
   // Class list
   // Table
@@ -58,8 +58,8 @@ module.exports = () => {
   function writeNodes(nodes, links) {
     const nodeMap = nodes.reduce((acc, node) => {
       (node.parameters || []).forEach((port) => {
-        // acc[port.inputPort] = node.name;
-        // acc[port.outputPort] = node.name;
+        acc[port.inputPort] = node.name;
+        acc[port.outputPort] = node.name;
       });
     }, {});
     return nodes.map((node) => itemToCode(node, links, nodeMap)).join(newline);
