@@ -9,3 +9,6 @@ tools:
       - script: GIRAFFE/crandas-generator.js
         language: Crandas
         format: python
+      - script: GIRAFFE/vdl-generator.js
+        language: VDL
+        format: JSON
