@@ -3,7 +3,7 @@ module.exports = () => {
   const newline = "\n";
 
   const CLASS_MAP = {
-    ["Table"]: () => tableCode(node),
+    ["Table"]: (node) => tableCode(node),
   };
   // Class list
   // Table
