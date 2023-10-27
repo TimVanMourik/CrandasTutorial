@@ -18,7 +18,7 @@ module.exports = () => {
       (parameter) => parameter.name === "Name or handle"
     );
 
-    return `${node.name} = cd.get_table("${handle || ""}")`;
+    return `${node.name} = cd.get_table("${handle?.value || ""}")`;
   }
 
   function writePreamble() {
