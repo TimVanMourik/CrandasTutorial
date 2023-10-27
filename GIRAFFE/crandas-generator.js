@@ -56,7 +56,7 @@ module.exports = () => {
 
   function writeNodes(nodes, links) {
     const nodeMap = nodes.reduce((acc, node) => {
-      (node.parameters || []).foreach((port) => {
+      (node.parameters || []).forEach((port) => {
         acc[port.inputPort] = node.name;
         acc[port.outputPort] = node.name;
       });
