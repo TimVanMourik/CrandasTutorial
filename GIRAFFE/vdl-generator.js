@@ -21,7 +21,7 @@ module.exports = () => {
       "get": handle.value,
       "mode": "regular",
       "keep": false,
-      "script_step": querie_script_step
+      "script_step": querie_script_step++
     };
   }
 
