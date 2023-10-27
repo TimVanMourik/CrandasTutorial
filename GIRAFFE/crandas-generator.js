@@ -58,8 +58,8 @@ module.exports = () => {
   function writeNodes(nodes, links) {
     const nodeMap = nodes.reduce((acc, node) => {
       (node.parameters || []).forEach((port) => {
-        acc[port.inputPort] = node.name;
-        acc[port.outputPort] = node.name;
+        acc[port.portFrom] = node.name;
+        acc[port.portTo] = node.name;
       });
     }, {});
     return nodes.map((node) => itemToCode(node, links, nodeMap)).join(newline);
