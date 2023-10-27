@@ -18,17 +18,17 @@ module.exports = () => {
     return `import crandas as cd\n`;
   }
 
-  function itemToCode(node, links, nodeMap) {
+  function itemToCode(node, links) {
     const generator = CLASS_MAP[node.class];
     if (!generator) {
       return "";
     }
 
-    return generator(node, links, nodeMap);
+    return generator(node, links);
   }
 
   function writeNodes(nodes, links) {
-    return nodes.map((node) => itemToCode(node, links, nodeMap)).join(newline);
+    return nodes.map((node) => itemToCode(node, links)).join(newline);
   }
 
   async function writeCode(nodes, links) {
