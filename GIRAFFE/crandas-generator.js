@@ -15,10 +15,10 @@ module.exports = () => {
 
   function tableCode(node) {
     const handle = node.parameters.find(
-      (parameter) => parameter.name === "handle"
+      (parameter) => parameter.name === "Name or handle"
     );
 
-    return `${node.name} = cd.get_table("${handle}")`;
+    return `${node.name} = cd.get_table("${handle || ""}")`;
   }
 
   function writePreamble() {
