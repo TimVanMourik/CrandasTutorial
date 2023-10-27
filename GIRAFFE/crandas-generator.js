@@ -22,29 +22,46 @@ module.exports = () => {
     return `${node.name} = cd.get_table("${handle?.value || ""}")`;
   }
 
-  function joinCode(node, nodeMap) {
-    const table1 = "";
-    const table2 = "";
+  function joinCode(node, links, nodeMap) {
+    const inputs = node.parameters.filter(
+      (param) => param.input && param.name === ""
+    );
 
-    return `${node.name} = cd.join(${table1}, ${table2}, )`;
+    const table1 = nodeMap[inputs[0]];
+    const table2 = nodeMap[inputs[1]];
+
+    const params = node.parameters.filter(
+      (parameter) =>
+        parameter.name === "" && !parameter.input && !parameter.output
+    );
+    const namedParams = params
+      .map((param) => `${param.name}=${param.value}`)
+      .join(", ");
+
+    return `${node.name} = cd.join(${table1}, ${table2}, ${namedParams})`;
   }
 
   function writePreamble() {
     return `import crandas as cd\n`;
   }
 
-  function itemToCode(node, nodeMap) {
+  function itemToCode(node, links, nodeMap) {
     const generator = CLASS_MAP[node.class];
     if (!generator) {
       return "";
     }
 
-    return generator(node, nodeMap);
+    return generator(node, links, nodeMap);
   }
 
   function writeNodes(nodes, links) {
-    const nodeMap = links.reduce((acc, link) => {});
-    return nodes.map((node) => itemToCode(node, nodeMap)).join(newline);
+    const nodeMap = nodes.reduce((acc, node) => {
+      node.ports.foreach((port) => {
+        acc[port.inputPort] = node.name;
+        acc[port.outputPort] = node.name;
+      });
+    }, {});
+    return nodes.map((node) => itemToCode(node, links, nodeMap)).join(newline);
   }
 
   async function writeCode(nodes, links) {
