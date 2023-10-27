@@ -27,8 +27,8 @@ module.exports = () => {
       (param) => param.input && param.name === ""
     );
 
-    const table1 = nodeMap[inputs[0]];
-    const table2 = nodeMap[inputs[1]];
+    const table1 = inputs[0] && nodeMap[inputs[0]];
+    const table2 = inputs[1] && nodeMap[inputs[1]];
 
     const params = node.parameters.filter(
       (parameter) =>
@@ -56,7 +56,7 @@ module.exports = () => {
 
   function writeNodes(nodes, links) {
     const nodeMap = nodes.reduce((acc, node) => {
-      node.ports.foreach((port) => {
+      (node.ports || []).foreach((port) => {
         acc[port.inputPort] = node.name;
         acc[port.outputPort] = node.name;
       });
