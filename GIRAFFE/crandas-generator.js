@@ -23,7 +23,7 @@ module.exports = () => {
   }
 
   function joinCode(node, links, nodeMap) {
-    return links.map((link) => link.id).join(", ");
+    return JSON.stringify(nodeMap);
     // const inputs = node.parameters.filter(
     //   (param) => param.input && param.name === ""
     // );
@@ -58,8 +58,8 @@ module.exports = () => {
   function writeNodes(nodes, links) {
     const nodeMap = nodes.reduce((acc, node) => {
       (node.parameters || []).forEach((port) => {
-        acc[port.portFrom] = node.name;
-        acc[port.portTo] = node.name;
+        acc[JSON.stringify(port)] = node.name;
+        // acc[port.portTo] = node.name;
       });
     }, {});
     return nodes.map((node) => itemToCode(node, links, nodeMap)).join(newline);
