@@ -4,15 +4,7 @@ module.exports = () => {
 
   const CLASS_MAP = {
     ["Table"]: (node) => tableCode(node),
-    ["Merge"]: (node) => joinCode(node, nodeMap),
   };
-  // Class list
-  // Table
-  // Join
-  // Column reference
-  // Mean
-  // Comparator
-  // Filter
 
   function tableCode(node) {
     const handle = node.parameters.find(
@@ -20,26 +12,6 @@ module.exports = () => {
     );
 
     return `${node.name} = cd.get_table("${handle?.value || ""}")`;
-  }
-
-  function joinCode(node, links, nodeMap) {
-    return JSON.stringify(nodeMap);
-    // const inputs = node.parameters.filter(
-    //   (param) => param.input && param.name === ""
-    // );
-
-    // const table1 = inputs[0] && nodeMap[inputs[0]];
-    // const table2 = inputs[1] && nodeMap[inputs[1]];
-
-    // const params = node.parameters.filter(
-    //   (parameter) =>
-    //     parameter.name === "" && !parameter.input && !parameter.output
-    // );
-    // const namedParams = params
-    //   .map((param) => `${param.name}=${param.value}`)
-    //   .join(", ");
-
-    // return `${node.name} = cd.join(${table1}, ${table2}, ${namedParams})`;
   }
 
   function writePreamble() {
@@ -56,13 +28,6 @@ module.exports = () => {
   }
 
   function writeNodes(nodes, links) {
-    const nodeMap = nodes.reduce((acc, node) => {
-      (node.parameters || []).forEach((port) => {
-        acc[JSON.stringify(port)] = node.name;
-        acc[port.input] = node.name;
-        acc[port.output] = node.name;
-      });
-    }, {});
     return nodes.map((node) => itemToCode(node, links, nodeMap)).join(newline);
   }
 
