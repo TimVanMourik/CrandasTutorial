@@ -118,6 +118,7 @@ module.exports = () => {
   }
 
   async function writeCode(nodes, links) {
+    querie_script_step = 0
     return JSON.stringify(nodesToTransaction(nodes, links), null, 2);
   }
 
