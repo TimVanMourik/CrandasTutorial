@@ -22,7 +22,7 @@
               "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CDataFrame",
               "ports": [
                 {
-                  "name": "handle",
+                  "name": "Name or handle",
                   "input": false,
                   "output": false,
                   "visible": true,
@@ -210,6 +210,92 @@
               ]
             },
             {
+              "name": "Max",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CDataFrame.max",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "axis",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": 0,
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                }
+              ]
+            },
+            {
+              "name": "Min",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CDataFrame.min",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "axis",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": 0,
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                }
+              ]
+            },
+            {
               "name": "Column reference",
               "toolbox": "Crandas",
               "code": [
@@ -295,7 +381,7 @@
                   "type": "boolean"
                 },
                 {
-                  "name": "treshold",
+                  "name": "threshold",
                   "input": false,
                   "output": false,
                   "visible": true,
@@ -338,7 +424,7 @@
                   "code": []
                 },
                 {
-                  "name": "theshold",
+                  "name": "threshold",
                   "input": false,
                   "output": false,
                   "visible": true,
@@ -401,7 +487,181 @@
                   "type": "boolean"
                 },
                 {
-                  "name": "treshold",
+                  "name": "threshold",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "None",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                }
+              ]
+            },
+            {
+              "name": "Max",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CSeriesColRef.max",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "as_table",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "default": false,
+                  "editable": true,
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ],
+                  "type": "boolean"
+                },
+                {
+                  "name": "threshold",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "None",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                }
+              ]
+            },
+            {
+              "name": "Min",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CSeriesColRef.min",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "as_table",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "default": false,
+                  "editable": true,
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ],
+                  "type": "boolean"
+                },
+                {
+                  "name": "threshold",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "default": "None",
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "",
+                  "input": false,
+                  "output": true,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                }
+              ]
+            },
+            {
+              "name": "Count",
+              "toolbox": "Crandas",
+              "code": [
+                {
+                  "language": "Crandas",
+                  "argument": {}
+                }
+              ],
+              "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CSeriesColRef.count",
+              "ports": [
+                {
+                  "name": "",
+                  "input": true,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": []
+                },
+                {
+                  "name": "as_table",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "default": false,
+                  "editable": true,
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ],
+                  "type": "boolean"
+                },
+                {
+                  "name": "threshold",
                   "input": false,
                   "output": false,
                   "visible": true,
@@ -444,7 +704,20 @@
                   "code": []
                 },
                 {
-                  "name": "criteria",
+                  "name": "operator",
+                  "input": false,
+                  "output": false,
+                  "visible": true,
+                  "editable": true,
+                  "code": [
+                    {
+                      "language": "Crandas",
+                      "argument": {}
+                    }
+                  ]
+                },
+                {
+                  "name": "value",
                   "input": false,
                   "output": false,
                   "visible": true,
