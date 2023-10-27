@@ -13,6 +13,10 @@
                 {
                   "language": "Crandas",
                   "argument": {}
+                },
+                {
+                  "language": "VDL",
+                  "argument": {}
                 }
               ],
               "web_url": "https://rosemanlabs.com/rldocs/latest/api/crandas.html#crandas.crandas.CDataFrame",
