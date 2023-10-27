@@ -1,7 +1,7 @@
 module.exports = () => {
   const CLASS_MAP = {
     ["Table"]: (node) => tableJSON(node),
-    ["Join"]: (node) => joinJSON(node, nodeMap),
+    ["Merge"]: (node) => joinJSON(node),
   };
   // Class list
   // Table
