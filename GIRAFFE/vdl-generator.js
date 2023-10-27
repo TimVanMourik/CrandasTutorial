@@ -6,7 +6,8 @@ module.exports = () => {
   function nodesToTransaction(nodes, links) {
     return nodes
       .map((node) => nodeToVdlCommand(node))
-      .filter((o) => Object.keys(o).length > 0);
+      .filter((o) => Object.keys(o).length > 0)
+      .concat(links);
   }
 
   async function writeCode(nodes, links) {
